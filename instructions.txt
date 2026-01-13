@@ -1,0 +1,17 @@
+You are provided with a directory containing a CSV file named 'users.csv'.
+
+Your task is to identify all user records with invalid email addresses. An email is considered invalid if it does not contain exactly one '@' character and at least one '.' character after the '@'.
+
+**Input:**
+- The file 'users.csv' contains columns: `id`, `name`, and `email`.
+
+**Output:**
+- Your output should list the IDs of the invalid records in ascending order.
+- The output format should be: `INVALID_IDS: id1,id2,...`
+
+**Constraints:**
+- Do not modify the input file.
+- Use Python and/or shell commands to solve the task.
+
+**Validation:**
+- A validation script will check if your output matches the expected invalid IDs.
