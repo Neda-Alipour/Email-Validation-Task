@@ -1,0 +1,41 @@
+You are provided with a directory containing a CSV file named 'users.csv'.
+
+Your task is to identify all user records with invalid email addresses. An email is considered invalid if it does not contain exactly one '@' character and at least one '.' character after the '@'.
+
+**Input:**
+- The file 'users.csv' contains columns: `id`, `name`, and `email`.
+
+**Output:**
+- Your output should list the IDs of the invalid records in ascending order.
+- You must produce results for EACH test case.
+
+Output format:
+case_01: INVALID_IDS: ...
+case_02: INVALID_IDS: ...
+case_03: INVALID_IDS: ...
+
+Each line corresponds to one case directory.
+
+**Constraints:**
+- Do not modify the input file.
+- Use Python and/or shell commands to solve the task.
+
+**Validation:**
+- A validation script will check if your output matches the expected invalid IDs.
+Email Validation Rules (Benchmark Definition)
+
+An email is considered VALID if and only if:
+
+1. It contains exactly one '@'
+2. The local part (before '@'):
+   - is non-empty
+   - contains only letters, numbers, dots, underscores, or hyphens
+3. The domain part (after '@'):
+   - does not start or end with '.'
+   - contains at least one '.'
+   - contains only letters, numbers, and dots
+   - does not contain consecutive dots
+4. No spaces are allowed
+
+The task will be evaluated across multiple hidden test cases.
+Your solution must generalize and not rely on hardcoded values.
